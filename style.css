@@ -1,0 +1,112 @@
+
+.skill-bubble {
+  padding: 10px 18px;
+  border-radius: 9999px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, background 0.3s ease;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.skill-bubble:nth-child(2) { animation-delay: 0.5s; }
+.skill-bubble:nth-child(3) { animation-delay: 1s; }
+.skill-bubble:nth-child(4) { animation-delay: 1.5s; }
+.skill-bubble:nth-child(5) { animation-delay: 2s; }
+.skill-bubble:nth-child(6) { animation-delay: 2.5s; }
+
+.skill-bubble:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+
+
+.tech-marquee {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 32px;
+  position: relative;
+}
+
+/* ONE ROW */
+.tech-track {
+  display: flex;
+  gap: 28px;
+  width: max-content;
+}
+
+/* CARD */
+.tech-item {
+  min-width: 120px;
+  height: 95px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(8px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: scale(1.08);
+  border-color: rgba(255,255,255,0.4);
+}
+
+/* ICONS — BRAND COLORS BACK */
+.tech-item img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+/* TEXT */
+.tech-item span {
+  font-size: 13px;
+  color: rgba(255,255,255,0.9);
+}
+
+
+
+/* ROW 1 → LEFT TO RIGHT */
+.row-1 {
+  animation: marquee-left 14s linear infinite;
+}
+
+/* ROW 2 → RIGHT TO LEFT */
+.row-2 {
+  animation: marquee-right 18s linear infinite;
+  margin-top: 16px;
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.leetcode-card {
+  width: 100%;
+  max-width: 800px;   /* size control */
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
+}
