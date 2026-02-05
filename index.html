@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anurag | Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-black text-white">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-black/60 backdrop-blur border-b border-white/10 mb-4">
+  <div class="max-w-full px-4 py-4 flex justify-between items-center">
+
+    <!-- RIGHT (NAME → HOVER TEXT) -->
+    <div class="relative group cursor-pointer text-xl text-gray-400 select-none">
+
+      <!-- Normal text -->
+      <span class="block transition-opacity duration-300 group-hover:opacity-0">
+        Anurag ~20 yrs
+      </span>
+
+      <!-- Hover text -->
+      <span class="absolute inset-0 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        Engineer &lt;3
+      </span>
+
+    </div>
+
+     <!-- RIGHT -->
+    <h4 class="text-lg font-semibold">ANURAG</h4>
+
+  </div>
+</nav>
+
+<!-- PROFILE + INTRO -->
+<section class="pt-20 px-6">
+  <div class="max-w-5xl mx-auto mr-20 ">
+
+    <!-- TOP ROW -->
+    <div class="flex items-center gap-6">
+
+      <!-- PROFILE IMAGE -->
+      <div class="w-44 h-44 relative group rounded-2xl overflow-hidden border-4 border-dashed border-white/30">
+        <img src="assets/pfp.jpg"
+             alt="Profile"
+             class="w-full h-full object-cover 
+            opacity-100 
+            group-hover:opacity-0 
+            transition-opacity duration-300" />
+        <img src="assets/ANU. DP.jpg"
+             alt="Profile Hover"
+             class="absolute inset-0 w-full h-full object-cover
+            opacity-0
+            group-hover:opacity-100
+            transition-opacity duration-300" />
+
+      </div>
+
+      <!-- NAME + ROLE -->
+      <div>
+        <h1 class="text-5xl font-light">
+          Anurag Singh
+        </h1>
+        <p class="text-lg text-gray-400 mt-3">
+          Engineering Student
+        </p>
+
+        <!-- SOCIAL ICONS -->
+        <div class="flex gap-3 mt-4">
+
+          <!-- GitHub -->
+          <a href="https://github.com/anuragsiuu"  target="_blank" rel="noopener noreferrer"
+            <i data-lucide="github"></i>
+             class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.38.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.24 1.83 1.24 1.07 1.84 2.8 1.31 3.49 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/>
+            </svg>
+          </a>
+
+          <!-- X (Twitter) -->
+          <a href="https://x.com/narendramodi" target="_blank" rel="noopener noreferrer"
+            <i data-lucide="twitter"></i>
+             class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.36 2H21l-5.6 6.4L22 22h-5.3l-4.1-6.1L7.3 22H4.6l6-6.9L2 2h5.4l3.7 5.5L18.36 2z"/>
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/anurag-singh-066388352/" target="_blank" rel="noopener noreferrer"
+             <i data-lucide="linkedin"></i>
+             class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.98 3.5c0 1.38-1.11 2.5-2.49 2.5A2.5 2.5 0 010 3.5C0 2.12 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.5 8.98h3.99V24H.5zM8.98 8.98h3.83v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.09V24h-3.99v-6.94c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.79-2.65 3.64V24H8.98z"/>
+            </svg>
+          </a>
+
+          <!-- Gmail -->
+          <a href="mailto:anuragkumarsingh772@gmail.com" target="_blank" rel="noopener noreferrer"
+            <i data-lucide="mail"></i>
+             class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/10 transition">
+            ✉️
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+   
+<!-- ABOUT -->
+<section id="about" class="pt-10 px-12">
+  <div class="max-w-4xl mx-auto mr-18">
+    <h2 class="text-5xl font-light mb-6">
+      Hi, I’m Anurag - Engineering student
+    </h2>
+    <p class="text-2xl leading-relaxed mb-4 font-light">
+      I'm a Full Stack web developer and Open Source Contributor, I love building products to solve through code, design, and content..
+    </p> 
+    <p class="text-2xl leading-relaxed mb-4 font-light">
+       "Experienced in solving complex problems with a tech-stack agnostic mindset, picking up new languages on the fly."
+    </p>
+    <p class="text-2xl leading-relaxed mb-4 font-light font-italic">
+        Technologies & Tools
+    </p>
+    <div class="my-10 border-t-2 border-white/20 shadow-[0_0_20px_rgba(255,255,255,0.05)]"></div>
+
+    
+
+  <!-- TECHNOLOGIES & TOOLS -->
+<div class="tech-marquee">
+
+  <!-- ROW 1 : LEFT → RIGHT -->
+  <div class="tech-track row-1">
+    <!-- ITEMS -->
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/html5/E34F26"><span>HTML</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/css3/1572B6"><span>CSS</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/javascript/F7DF1E"><span>JavaScript</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/python/3776AB"><span>Python</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/mysql/4479A1"><span>MySQL</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/react/61DAFB"><span>React</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/nextdotjs/ffffff"><span>Next.js</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/nodedotjs/339933"><span>Node.js</span></div>
+
+    <!-- DUPLICATE SAME AGAIN -->
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/html5/E34F26"><span>HTML</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/css3/1572B6"><span>CSS</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/javascript/F7DF1E"><span>JavaScript</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/python/3776AB"><span>Python</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/mysql/4479A1"><span>MySQL</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/react/61DAFB"><span>React</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/nextdotjs/ffffff"><span>Next.js</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/nodedotjs/339933"><span>Node.js</span></div>
+  </div>
+
+  <!-- ROW 2 : RIGHT → LEFT -->
+  <div class="tech-track row-2">
+    <!-- SAME ITEMS -->
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/html5/E34F26"><span>HTML</span></div>
+    <div class="tech-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/css3.svg"><span>CSS</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/javascript/F7DF1E"><span>JavaScript</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/python/3776AB"><span>Python</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/mysql/4479A1"><span>MySQL</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/react/61DAFB"><span>React</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/nextdotjs/ffffff"><span>Next.js</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/nodedotjs/339933"><span>Node.js</span></div>
+
+    <!-- DUPLICATE -->
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/html5/E34F26"><span>HTML</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/css3/1572B6"><span>CSS</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/javascript/F7DF1E"><span>JavaScript</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/python/3776AB"><span>Python</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/mysql/4479A1"><span>MySQL</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/react/61DAFB"><span>React</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/nextdotjs/ffffff"><span>Next.js</span></div>
+    <div class="tech-item"><img src="https://cdn.simpleicons.org/nodedotjs/339933"><span>Node.js</span></div>
+  </div>
+
+</div>
+<div class="my-10 border-t-2 border-white/20 shadow-[0_0_20px_rgba(255,255,255,0.05)]"></div>
+
+<!-- leetcode -->
+ 
+<section class="py-24 px-12">
+  <div class="max-w-10xl mx-auto flex justify-center">
+
+    <img
+      src="https://leetcard.jacoblin.cool/Anux_7?theme=dark&font=Inter"
+      alt="LeetCode Stats"
+      class="leetcode-card"
+    />
+
+  </div>
+</section>
+<div class="my-10 border-t-2 border-white/20 shadow-[0_0_20px_rgba(255,255,255,0.05)]"></div>
+
+
+
+
+<!-- PROJECTS -->
+<section id="projects" class="py-10 max-w-6xl mx-auto px-6">
+  <h2 class="text-3xl font-semibold mb-10">Projects</h2>
+
+  <div class="grid md:grid-cols-2 gap-8">
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition">
+      <img src="assets/project1.png" class="rounded-lg mb-4" />
+      <h3 class="text-lg font-medium">3D Blood Bank Website</h3>
+      <p class="text-gray-400 text-sm mt-2">
+        A modern blood donation platform with 3D UI elements.
+      </p>
+    </div>
+
+    <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+      <h3 class="text-lg font-medium">GameTourney</h3>
+      <p class="text-gray-400 text-sm mt-2">
+        Gaming tournament platform with clean dashboard UI.
+      </p>
+    </div>
+  </div>
+</section>
+<div class="my-10 border-t-2 border-white/20 shadow-[0_0_20px_rgba(255,255,255,0.05)]"></div>
+
+ <!-- WHY INVEST IN ME -->
+<section class="py-16 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <h2 class="text-4xl font-light mb-10">
+      Why you should invest in me?
+    </h2>
+
+    <div class="overflow-x-auto">
+      <table class="w-full border border-white/10 rounded-2xl overflow-hidden">
+        <thead class="bg-white/5">
+          <tr>
+            <th class="p-4 text-left font-light"></th>
+            <th class="p-4 text-center font-light text-gray-400">Candidate #1</th>
+            <th class="p-4 text-center font-light text-gray-400">Candidate #2</th>
+            <th class="p-4 text-center font-light text-gray-400">Candidate #3</th>
+
+            <!-- ME HEADER -->
+            <th class="p-4 text-center font-semibold 
+                       border-4 border-purple-500/70 
+                       bg-purple-500/15 
+                       shadow-[0_0_30px_rgba(168,85,247,0.25)]">
+              Me
+            </th>
+          </tr>
+        </thead>
+
+        <tbody class="divide-y divide-white/10">
+
+          <!-- ROW -->
+          <tr>
+            <td class="p-4">learn new skills</td>
+            <td class="p-4 text-center text-gray-500">✕</td>
+            <td class="p-4 text-center text-green-400">✓</td>
+            <td class="p-4 text-center text-gray-500">✕</td>
+            <td class="p-4 text-center text-green-400 
+                       border-4 border-purple-500/70 
+                       bg-purple-500/10">
+              ✓
+            </td>
+          </tr>
+
+          <tr>
+            <td class="p-4">ship faster</td>
+            <td class="p-4 text-center text-gray-500">✕</td>
+            <td class="p-4 text-center text-green-400">✓</td>
+            <td class="p-4 text-center text-green-400">✓</td>
+            <td class="p-4 text-center text-green-400 
+                       border-4 border-purple-500/70 
+                       bg-purple-500/10">
+              ✓
+            </td>
+          </tr>
+
+          <tr>
+            <td class="p-4">generate revenue</td>
+            <td class="p-4 text-center text-green-400">✓</td>
+            <td class="p-4 text-center text-green-400">✓</td>
+            <td class="p-4 text-center text-gray-500">✕</td>
+            <td class="p-4 text-center text-green-400 
+                       border-4 border-purple-500/70 
+                       bg-purple-500/10">
+              ✓
+            </td>
+          </tr>
+
+          <tr>
+            <td class="p-4">shitpost</td>
+            <td class="p-4 text-center text-green-400">✓</td>
+            <td class="p-4 text-center text-gray-500">✕</td>
+            <td class="p-4 text-center text-green-400">✓</td>
+            <td class="p-4 text-center text-green-400 
+                       border-4 border-purple-500/70 
+                       bg-purple-500/10">
+              ✓
+            </td>
+          </tr>
+
+          <tr>
+            <td class="p-4">touch grass</td>
+            <td class="p-4 text-center text-green-400">✓</td>
+            <td class="p-4 text-center text-green-400">✓</td>
+            <td class="p-4 text-center text-green-400">✓</td>
+            <td class="p-4 text-center text-gray-500 
+                       border-4 border-purple-500/70 
+                       bg-purple-500/10">
+              ✕
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+<div class="my-10 border-t-2 border-white/20 shadow-[0_0_20px_rgba(255,255,255,0.05)]"></div>
+<!-- quote -->
+<section class="py-15 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <div
+      class="relative rounded-2xl
+             border-2 border-white/20
+             bg-gradient-to-b from-white/[0.06] to-transparent
+             backdrop-blur-md
+             px-12 py-14
+             shadow-[0_0_50px_rgba(255,255,255,0.08)]
+             transition-all duration-300
+             hover:shadow-[0_0_70px_rgba(255,255,255,0.12)]">
+
+      <p class="text-xl md:text-xl font-light italic text-white/90 leading-relaxed">
+        “investing in Anurag is the same as investing in bitcoin in 2008”</h1>
+      </p>
+
+      <div class="mt-10 text-right text-white/70">
+        — <span class="font-medium text-white">a wise man</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<div class="my-10 border-t-2 border-white/20 shadow-[0_0_20px_rgba(255,255,255,0.05)]"></div>
+<!-- FINAL footer -->
+<section class="py-10 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-5xl md:text-6xl font-semibold mb-8">
+      You Scrolled So Far
+    </h2>
+    <p class="text-xl text-white/70 mb-14">
+      Want to chat? Reach out to me directly.
+    </p>
+
+    <!-- CONTACT BUTTONS -->
+    <div class="flex flex-wrap justify-center gap-6 mb-24">
+
+      <!--whatsapp-->
+    <a href="https://wa.me/917061334500" target="_blank"
+    class="px-6 py-3 square-full border border-white/20
+          text-white/80 hover:text-white
+          hover:border-white/40
+          transition">
+           <img
+    src="https://cdn.simpleicons.org/whatsapp/25D366"
+    alt="WhatsApp"
+    class="w-5 h-5">
+    </a>
+
+
+    </div>
+    <!-- DIVIDER -->
+    <div class="my-10 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+    <div
+      class="max-w-4xl mx-auto rounded-2xl
+             border border-white/15
+             bg-gradient-to-b from-white/[0.05] to-transparent
+             backdrop-blur-md
+             px-10 py-12
+             shadow-[0_0_40px_rgba(255,255,255,0.08)]">
+
+      <p class="text-xl md:text-2xl font-light italic text-white/90 leading-relaxed">
+        “As a man casts off worn-out clothes and puts on new ones,
+        so the soul casts off worn-out bodies and enters new ones.”
+      </p>
+
+      <div class="mt-8 text-right text-white/70">
+        — <span class="text-white font-medium">Bhagavad Gita</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- FOOTER CREDIT -->
+<footer class=" mt-25 pb-12 text-center text-sm text-white/50">
+  Developed by <span class="text-white/80">Anurag</span><br>
+  © 2026. All rights reserved.
+</footer>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>
